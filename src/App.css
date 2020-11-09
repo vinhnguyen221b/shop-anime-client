@@ -561,7 +561,7 @@ header {
 .reviews-block .reviews-item a:hover {
   color: #fdc830;
 }
-.reviews-block .reviewBtn button {
+.reviews-block .reviewBtn .postReview {
   background-color: transparent;
   padding: 0.6rem;
   color: #fdc830;
@@ -571,7 +571,7 @@ header {
   transition: 0.3s background-color ease-in-out;
 }
 
-.reviews-block .reviewBtn button:hover {
+.reviews-block .reviewBtn .postReview:hover {
   background-color: #fdc830;
   color: rgb(11, 18, 30);
 }
@@ -1064,5 +1064,8 @@ footer .contact .social a:hover {
 }
 
 .ql-editor {
+  color: white;
+}
+.ql-editor.ql-blank:before {
   color: white;
 }
