@@ -39,11 +39,10 @@ function Register(props) {
     const userErrors = validate(inputs, schema);
     setError(userErrors);
     try {
-      const { config } = await auth.register(inputs);
-      const jwt = config.headers["x-auth-token"];
-      console.log(jwt);
+      const { headers } = await auth.register(inputs);
+      const jwt = headers["x-auth-token"];
       auth.loginWithJwt(jwt);
-      // window.location = "/";
+      window.location = "/";
     } catch (error) {
       console.log(error.response);
       if (error.response && error.response.status === 400) {

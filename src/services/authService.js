@@ -14,10 +14,11 @@ export async function login({ email, password }) {
   localStorage.setItem(tokenKey, jwt);
 }
 export function loginWithJwt(jwt) {
+  localStorage.removeItem(tokenKey);
   localStorage.setItem(tokenKey, jwt);
 }
-export function register({ email, password, name, phone }) {
-  return http.post(api + "create", { email, password, name, phone });
+export function register(data) {
+  return http.post(api + "create", data);
 }
 
 export function logout() {

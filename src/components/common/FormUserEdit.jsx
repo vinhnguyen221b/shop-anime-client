@@ -29,14 +29,12 @@ function FormUserEdit({ user }) {
       await authService.editMe(inputs);
       toast.success("User edited!");
     } catch (error) {
-      console.log("Error");
-      console.log(error);
-      //   if (error.response && error.response.status === 400) {
-      //     toast.error("Invalid inputs");
-      //   }
-      //   if (error.response && error.response.status === 401) {
-      //     toast.error("Your session have ended");
-      //   }
+      if (error.response && error.response.status === 400) {
+        toast.error("Invalid inputs");
+      }
+      if (error.response && error.response.status === 401) {
+        toast.error("Your session have ended");
+      }
     }
   };
 

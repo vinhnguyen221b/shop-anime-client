@@ -30,8 +30,8 @@ function Footer(props) {
               </Link>
             </p>
             <p>
-              <i className="fas fa-street-view"></i> &nbsp;&nbsp;Lac Long Quan,
-              Tan Binh
+              <i className="fas fa-street-view"></i> &nbsp;&nbsp; Tran Van
+              Hoang, Tan Binh, HCMC
             </p>
             <p>
               <a
