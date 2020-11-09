@@ -21,7 +21,7 @@ function ProductItem({ product }) {
               </button>
             ) : (
               <Link to="/login">
-                <i className="fas fa-cart-arrow-down"></i>Buy login
+                <i className="fas fa-cart-arrow-down"></i>Buy it
               </Link>
             )}
           </div>
@@ -70,7 +70,7 @@ function ProductItem({ product }) {
                 </button>
               ) : (
                 <Link to="/login">
-                  <i className="fas fa-cart-arrow-down"></i>Buy login
+                  <i className="fas fa-cart-arrow-down"></i>Buy it
                 </Link>
               )}
             </div>

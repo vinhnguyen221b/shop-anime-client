@@ -69,7 +69,13 @@ function ProductDetail(props) {
               Add to cart
             </button>
           ) : (
-            <Link to="/login">Add to </Link>
+            <Link to="/login">
+              <i
+                className="fas fa-shopping-basket"
+                style={{ marginRight: "10px" }}
+              ></i>{" "}
+              Add to cart
+            </Link>
           )}
         </div>
       </div>

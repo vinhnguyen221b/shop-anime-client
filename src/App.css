@@ -842,7 +842,7 @@ footer .contact .social a:hover {
   filter: brightness(1.25);
 }
 
-.detail-cart :active {
+.detail-cart a {
   display: inline-block;
   padding: 0.6rem;
   border-radius: 10px;
@@ -856,6 +856,18 @@ footer .contact .social a:hover {
 .detail-cart a:hover {
   filter: brightness(1.25);
 }
+
+.detail-cart a:active {
+  display: inline-block;
+  padding: 0.6rem;
+  border-radius: 10px;
+  background: #f3ce13;
+  color: #0f2027;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 992px) {
   .detail-media .poster {
     text-align: center;
